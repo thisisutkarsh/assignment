@@ -7,11 +7,48 @@
     <meta name="author" content="Utkarsh kumar">
     <meta name="description" content="Log in page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" type="text/css">
+    <link rel="stylesheet" href="login.css" type="text/css">
 </head>
 
 <body>
+    <div class="main">
+        <div class="container">
+            <div class="main-img">
+                <img src="image/login.svg" height="650px" width="500px">
+            </div>
+        </div>
 
+        <div class="login-container">
+            <form action="" method="get">
+                <img src="image/profile-pic.svg">
+                <h2>LOG IN</h2>
+
+                <label for="email"></label>
+                <input type="text" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="password"></label>
+                <input type="password" id="password" name="pwd" placeholder="Your Password" required minlength="7">
+
+                <div class="forgot">
+                    <a href="#" target="blank">Forgot password?</a>
+                </div>
+
+                <div class="button">
+                    <a href="../homepage/index.html">LOG IN</a>
+                </div>
+
+                <!-- <div class="check">
+                    <input type="checkbox" id="remember" checked="checked" name="remember">
+                    <label for="remember"> Remember Me</label>
+                </div> -->
+
+                <!-- <div class="signup">
+                    <a href="#" target="blank">SIGNUP</a> -->
+            </form>
+        </div>
+
+    </div>
 </body>
 
 </html>
