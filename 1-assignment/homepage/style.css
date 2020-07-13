@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+.nav-list {
+    list-style-type: none;
+    /* margin: none;
+    padding: none; */
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #00BFA6;
+    height: 80px;
+}
+
+li a {
+    color: #fff;
+    padding: 8px;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
