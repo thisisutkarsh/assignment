@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Cairo',
+        sans-serif;
     overflow: hidden;
 }
 
@@ -78,8 +79,15 @@ form {
 }
 
 .forgot a:hover {
-    color: #00BFA6;
-    ;
+    color: dodgerblue;
+}
+
+#email:focus,
+#password:focus,
+#email:hover,
+#password:hover {
+    color: dodgerblue;
+    border-bottom-color: dodgerblue;
 }
 
 button {
@@ -92,8 +100,14 @@ button {
     outline: none;
     padding: 10px;
     text-align: center;
-    background-color: #16dcd6;
+    background-color: #00BFA6;
     font-size: 1.2rem;
     color: #fff;
     margin: 1rem 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: dodgerblue;
 }
