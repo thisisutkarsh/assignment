@@ -5,7 +5,6 @@ function check(...arr) {
     for (let i = 0; i < 4; i++) {
         if (arr[i] === arr[i + 1]) {
             count++;
-            console.log(count);
         }
     }
     if (count === 4) {
