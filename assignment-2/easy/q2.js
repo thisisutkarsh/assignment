@@ -6,7 +6,7 @@ function addup(num) {
     let count = 1;
     let sum = 0;
     while (count <= num) {
-        sum = sum + count++;
+        sum += count++;
     }
     return (console.log(sum))
 }
