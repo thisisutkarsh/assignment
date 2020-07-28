@@ -6,8 +6,8 @@
 let input = document.querySelectorAll(".col");
 
 const user = "<label for='username'> Username:</label";
-const newPassword = "<label for='username'> Password:</label";
-const newConfirm = "<label for='username'> Confirm Password</label";
+const newPassword = "<label for='password'> Password:</label";
+const newConfirm = "<label for='confirmPassword'> Confirm Password</label";
 input[0].insertAdjacentHTML("beforebegin", user);
 input[1].insertAdjacentHTML("beforebegin", newPassword);
 input[2].insertAdjacentHTML("beforebegin", newConfirm);
