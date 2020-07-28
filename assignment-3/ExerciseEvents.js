@@ -5,10 +5,17 @@
 */
 let input = document.querySelectorAll(".col");
 
-const newLabel = "<label></label";
-for (let i = 0; i < 3; i++) {
-  input[i].insertAdjacentHTML("afterbegin", newLabel);
-}
+const user = "<label for='username'> Username:</label";
+const newPassword = "<label for='username'> Password:</label";
+const newConfirm = "<label for='username'> Confirm Password</label";
+input[0].insertAdjacentHTML("beforebegin", user);
+input[1].insertAdjacentHTML("beforebegin", newPassword);
+input[2].insertAdjacentHTML("beforebegin", newConfirm);
+
+
+// for (let i = 0; i < 3; i++) {
+
+// }
 
 /*
   Exercise 02
