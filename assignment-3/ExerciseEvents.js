@@ -32,10 +32,9 @@ document
   .getElementById("confirmPassword")
   .setAttribute("name", "ConfirmPassword");
 
-// Do below if you want to set attribute and then move forward
-// document
-//   .getElementById("registrationForm")
-//   .setAttribute("onSubmit", "return validatePassword(this)");
+// Do below if you want to do onsubmit
+
+// document.getElementById("registrationForm").setAttribute("onSubmit", "return validatePassword(this)");
 // Function to check Whether both passwords
 //  is same or not.
 // function checkPassword(form) {
@@ -46,11 +45,11 @@ document
 //  By adding event listener
 const btn = document.querySelector(".btn").addEventListener("click", validatePassword);
 
+
 function validatePassword(pwd) {
   password = document.getElementById("password").value;
-  confirmPassword = document.getElementById("confirmPassword").value
-  console.log(password);
-
+  confirmPassword = document.getElementById("confirmPassword").value;
+  console.log(password)
   // If password not entered
   if (password == "") alert("Please enter Password");
 
@@ -65,11 +64,10 @@ function validatePassword(pwd) {
 
   // If same return True.
   else {
-    alert("Password Matched: Welcome!");
+    alert("Registration succesful");
     return true;
   }
 }
-
 
 
 /*
@@ -79,30 +77,23 @@ Ensure the ‘Register’ button is disabled until the user has entered valid da
 */
 
 // document.querySelector(".btn").setAttribute("disabled", "disabled");
+// document.getElementById("registrationForm").setAttribute("onSubmit", "return checkForm(this)");
 
-document.getElementById("registrationForm").setAttribute("onSubmit", "return checkForm(this)");
 
+document.getElementById("username").setAttribute("name", "username");
+// pass = document.getElementById("password").value;
+// confirmPass = document.getElementById("confirmPassword").value;
+// const username = document.getElementById("username").value;
 
-let elmnt = document.getElementById("#registrationForm");
-// console.log(elmnt);
-// document.querySelectorAll(".form-control").forEach((element) => {
-//   element.setAttribute("onclick", "checkForm()");
-// });
-
-const checkform = () => {
-  let elmnt = document.forms["form"];
-  console.log(elmnt);
-  var cansubmit = true;
-
-  for (var i = 0; i < f.length; i++) {
-    if (f[i].value.length == 0) cansubmit = false;
-  }
-
-  if (cansubmit) {
-    document.getElementById("submitbutton").disabled = false;
-  }
-};
-const register = document.querySelector(".button");
+// function checkForm() {
+//   if ($('#inputName').val().length > 0 &&
+//     $('#inputEmail').val().length > 0 &&
+//     $('#inputTel').val().length > 0) {
+//     $("input[type=submit]").prop("disabled", false);
+//   } else {
+//     $("input[type=submit]").prop("disabled", true);
+//   }
+// }
 
 /*
   Exercise 05
@@ -110,7 +101,4 @@ const register = document.querySelector(".button");
 When the user clicks the ‘Register’ button, a message should be displayed informing them of a successful user registration.
 */
 
-// const button = document.querySelector(".btn");
-// button.addEventListener("click", () => {
-//   alert("Registration succesful");
-// }, true);
+// Done with just one code in exercise 3
