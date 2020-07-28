@@ -5,7 +5,7 @@
 */
 let input = document.querySelectorAll(".col");
 
-const newLabel = "<label></label>";
+const newLabel = "<label></label";
 for (let i = 0; i < 3; i++) {
   input[i].insertAdjacentHTML("afterbegin", newLabel);
 }
@@ -42,14 +42,14 @@ document
 //   password2 = form.password2.value;
 
 
+
 //  By adding event listener
 const btn = document.querySelector(".btn").addEventListener("click", validatePassword);
-
 
 function validatePassword(pwd) {
   password = document.getElementById("password").value;
   confirmPassword = document.getElementById("confirmPassword").value;
-  console.log(password)
+
   // If password not entered
   if (password == "") alert("Please enter Password");
 
@@ -76,24 +76,23 @@ function validatePassword(pwd) {
 Ensure the ‘Register’ button is disabled until the user has entered valid data into all the input fields.  Once they have, the registration button should then be enabled.
 */
 
-// document.querySelector(".btn").setAttribute("disabled", "disabled");
-// document.getElementById("registrationForm").setAttribute("onSubmit", "return checkForm(this)");
+document.querySelector(".btn").setAttribute("disabled", "");
 
+let change = document.querySelectorAll(".form-control");
+for (let i = 0; i < 3; i++) {
+  change[i].setAttribute("onblur", "checkForm()")
+}
 
 document.getElementById("username").setAttribute("name", "username");
-// pass = document.getElementById("password").value;
-// confirmPass = document.getElementById("confirmPassword").value;
-// const username = document.getElementById("username").value;
 
-// function checkForm() {
-//   if ($('#inputName').val().length > 0 &&
-//     $('#inputEmail').val().length > 0 &&
-//     $('#inputTel').val().length > 0) {
-//     $("input[type=submit]").prop("disabled", false);
-//   } else {
-//     $("input[type=submit]").prop("disabled", true);
-//   }
-// }
+function checkForm() {
+  const pass = document.getElementById("password").value;
+  const confirmPass = document.getElementById("confirmPassword").value;
+  const username = document.getElementById("username").value;
+  if (username != "" && pass != "" && confirmPass == pass) {
+    document.querySelector(".btn").removeAttribute("disabled");
+  }
+}
 
 /*
   Exercise 05
