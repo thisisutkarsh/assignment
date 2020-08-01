@@ -94,13 +94,13 @@ ul {
 
 input {
   border: none;
-  background-color: #01cbc6;
+  background-color: #f9dda4;
   padding: 10px;
   margin-bottom: 6px;
   border-radius: 15px;
-  color: ghostwhite;
+  color: black;
   font-size: 1.4rem;
-  /* font-weight: bold; */
+  font-weight: 500;
   outline: none;
   width: 100%;
 }
