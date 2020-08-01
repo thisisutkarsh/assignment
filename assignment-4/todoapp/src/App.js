@@ -74,10 +74,7 @@ function App() {
       <form className="list">
         <ul>
           {todos.map((todo, i) => (
-            <div
-              className="todo"
-              style={{ textDecoration: todo.isCompleted ? "line-through" : "" }}
-            >
+            <div className={`todo ${todo.isCompleted && "todo-is-completed"}`}>
               <div className={"checkbox"} onClick={() => toggleTodoComplete(i)}>
                 {todo.isCompleted && <span>&#x2714;</span>}
               </div>
