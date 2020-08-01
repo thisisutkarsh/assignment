@@ -18,9 +18,6 @@ function App() {
       isCompleted: false,
     },
   ]);
-  // const Todo = ({ todo }) => {
-  //   return <div className="todo">{todo.content}</div>;
-  // };
 
   function handleClick(e, i) {
     if (e.key === "Enter") {
@@ -44,6 +41,7 @@ function App() {
       document.forms[0].elements[i + 1].focus();
     }, 0);
   }
+
   function updateTodo(e, i) {
     const newTodos = [...todos];
     newTodos[i].content = e.target.value;
