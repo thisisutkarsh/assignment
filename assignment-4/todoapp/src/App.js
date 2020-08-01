@@ -40,9 +40,9 @@ function App() {
       isCompleted: false,
     });
     setTodos(newTodos);
-    // setTimeout(() => {
-    //   document.forms[0].elements[i + 1].focus();
-    // }, 0);
+    setTimeout(() => {
+      document.forms[0].elements[i + 1].focus();
+    }, 0);
   }
   function updateTodo(e, i) {
     const newTodos = [...todos];
@@ -55,9 +55,14 @@ function App() {
     setTodos((todos) =>
       todos.slice(0, i).concat(todos.slice(i + 1, todos.length))
     );
-    // setTimeout(() => {
-    //   document.forms[0].elements[i - 1].focus();
-    // }, 0);
+    setTimeout(() => {
+      document.forms[0].elements[i - 1].focus();
+    }, 0);
+  }
+  function toggleTodoComplete(index) {
+    const temporaryTodos = [...todos];
+    temporaryTodos[index].isCompleted = !temporaryTodos[index].isCompleted;
+    setTodos(temporaryTodos);
   }
 
   return (
@@ -68,8 +73,13 @@ function App() {
       <form className="list">
         <ul>
           {todos.map((todo, i) => (
-            <div className="todo">
-              <div className="checkbox" />
+            <div
+              className="todo"
+              style={{ textDecoration: todo.isCompleted ? "line-through" : "" }}
+            >
+              <div className={"checkbox"} onClick={() => toggleTodoComplete(i)}>
+                {todo.isCompleted && <span>&#x2714;</span>}
+              </div>
               <input
                 type="text"
                 value={todo.content}
