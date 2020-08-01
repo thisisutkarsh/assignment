@@ -1,0 +1,114 @@
+body {
+  background-color: #2f363f;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  /* color: black; */
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  display: block;
+  margin: auto;
+}
+.app {
+  padding: 30px;
+  height: 100vh;
+}
+
+/*button {
+
+  color: #ffffff;
+  background-color: #01cbc6;
+  padding: 15px;
+  display: block;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-radius: 15px;
+  font-size: 12px;
+  box-shadow: 1px 1px 1px rgba(47, 54, 63, 0.15);
+}
+button:hover {
+  transform: scale(1.4);
+  transition: ease-out;
+} */
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+
+  /* Add it later */
+  /* background-color: #01cbc6;
+  border-radius: 4px;
+  padding: 5px; */
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  /* box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15); */
+}
+
+.todo-is-completed .checkbox {
+  color: #000;
+  background: #fff;
+}
+
+.todo-is-completed input {
+  text-decoration: line-through;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease-in-out;
+  border: 1px solid #fff;
+}
+
+.checkbox:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.checkbox-checked {
+  color: #000;
+  background: #fff;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  line-height: 2rem;
+  width: 500px;
+}
+
+input {
+  /* border: none; */
+  background: transparent;
+  /* background-color: #01cbc6; */
+  padding: 10px;
+  margin-bottom: 6px;
+  border-radius: 10px;
+  color: #01cbc6;
+  font-size: 1.4rem;
+  outline: none;
+  width: 100%;
+}
