@@ -1,9 +1,9 @@
 # Projects
 
-Projects made as a part of the CipherSchools MERN stack course
+Projects made as a part of the CipherSchools' MERN stack course.
 
-This includes a portfolio based on HTML and CSS
+This includes a portfolio based on HTML and CSS.
 
-A Todo app based on REACT
+A Todo app based on REACT.
 
-Several Javascript and DOM-Manipulation questions
+Several Javascript and DOM-Manipulation questions.
