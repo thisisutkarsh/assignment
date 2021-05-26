@@ -12,7 +12,6 @@ input[0].insertAdjacentHTML("beforebegin", user);
 input[1].insertAdjacentHTML("beforebegin", newPassword);
 input[2].insertAdjacentHTML("beforebegin", newConfirm);
 
-
 // for (let i = 0; i < 3; i++) {
 
 // }
@@ -48,10 +47,10 @@ document
 //   password1 = form.password1.value;
 //   password2 = form.password2.value;
 
-
-
 //  By adding event listener
-const btn = document.querySelector(".btn").addEventListener("click", validatePassword);
+const btn = document
+  .querySelector(".btn")
+  .addEventListener("click", validatePassword);
 
 function validatePassword(pwd) {
   password = document.getElementById("password").value;
@@ -59,10 +58,8 @@ function validatePassword(pwd) {
 
   // If password not entered
   if (password == "") alert("Please enter Password");
-
   // If confirm password not entered
   else if (confirmPassword == "") alert("Please enter confirm password");
-
   // if not same return false
   else if (password != confirmPassword) {
     alert("\nPassword did not match: Please try again");
@@ -76,7 +73,6 @@ function validatePassword(pwd) {
   }
 }
 
-
 /*
   Exercise 04
   -----------
@@ -87,7 +83,7 @@ document.querySelector(".btn").setAttribute("disabled", "");
 
 let change = document.querySelectorAll(".form-control");
 for (let i = 0; i < 3; i++) {
-  change[i].setAttribute("onblur", "checkForm()")
+  change[i].setAttribute("onblur", "checkForm()");
 }
 
 document.getElementById("username").setAttribute("name", "username");
